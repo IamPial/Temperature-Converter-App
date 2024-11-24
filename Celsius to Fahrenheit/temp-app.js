@@ -21,7 +21,7 @@ const todayTemp = (celSius) => {
     if(typeof celSius !== 'number' || isNaN(celSius)){
         return "Invalid input, Please provide a number!";
     }
-    const Fahrenheit = (celsius * 9 / 5) + 32;
+    const Fahrenheit = (celSius * 9 / 5) + 32;
     return `Today's temperature is ${Fahrenheit.toFixed(2)} degree Fahrenheit.`
 }
 console.log(todayTemp(30));  // Valid number
