@@ -17,11 +17,11 @@ console.log(temp(null)); // Now handled as Invalid;
 
 
 //with arrow function;
-const todayTemp = (Fahrenheit) => {
-    if(typeof Fahrenheit !== 'number' || isNaN(Fahrenheit)){
+const todayTemp = (fahrenHeit) => {
+    if(typeof fahrenHeit !== 'number' || isNaN(fahrenHeit)){
         return "Invalid Key, Please provide a number!";
     }
-    const Celsius = 5 / 9 * (Fahrenheit - 32);
+    const Celsius = 5 / 9 * (fahrenHeit - 32);
     return `Today's temperature is ${Celsius.toFixed(2)} degree Celsius.`;
 }
 console.log(todayTemp(80)); // Valid number;
