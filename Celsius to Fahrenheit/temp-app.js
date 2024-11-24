@@ -8,7 +8,7 @@ function temp(celsius){
     if(typeof celsius !== 'number' || isNaN(celsius)){
         return "Invalid input, Please provide a number!";
     }
-    const fahrenheit = 9 / 5 * (celsius + 32);
+    const fahrenheit = (celsius * 9 / 5) + 32;
     return `Today's temperature is ${fahrenheit.toFixed(2)} degree Fahrenheit.`;
 }
 console.log(temp(20));  // Valid number
@@ -21,7 +21,7 @@ const todayTemp = (celSius) => {
     if(typeof celSius !== 'number' || isNaN(celSius)){
         return "Invalid input, Please provide a number!";
     }
-    const Fahrenheit = 9 / 5 * (celSius + 32);
+    const Fahrenheit = (celsius * 9 / 5) + 32;
     return `Today's temperature is ${Fahrenheit.toFixed(2)} degree Fahrenheit.`
 }
 console.log(todayTemp(30));  // Valid number
