@@ -1,5 +1,5 @@
 /* Write a function to convert Celsius to Fahrenheit:
-    Fahrenheit =  9/5 *(Celsius + 32);
+    Fahrenheit =  (celsius * 9/5) + 32;
     
 * Add validation to ensure the input is a number.*/ 
 
